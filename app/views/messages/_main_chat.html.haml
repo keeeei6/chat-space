@@ -1,1 +1,43 @@
-<チャット画面>
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__group-name
+        test
+      .main-header__left-box__member
+        Member:oka
+    .main-header__rightbox
+      = link_to "#", class:"edit-btn" do
+        Edit
+  .main-messages
+    .main-message
+      .main-message__info
+        %p.main-message__info__name
+          oka
+        %p.main-message__info__day
+          2019/05/20(Wed) 11:05:00
+      %p.main-message__text
+        こんにちは
+    .main-message
+      .main-message__info
+        %p.main-message__info__name
+          tanaka
+        %p.main-message__info__day
+          2019/05/20(Wed) 11:10:00
+      %p.main-message__text
+        どうも
+    .main-message
+      .main-message__info
+        %p.main-message__info__name
+          hirata
+        %p.main-message__info__day
+          2019/05/20(Wed) 11:30:00
+      %p.main-message__text
+        ヤッホー
+  .main-foom
+    %foom.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('far', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class:"submit-btn", value: "Send"}
