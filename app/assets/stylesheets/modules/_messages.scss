@@ -46,13 +46,16 @@
       margin-bottom: 40px;
       color: #ffffff;
       font-weight: bold;
-
+      text-decoration: none;
+      
       &__name {
         font-size: 15px;
         margin-bottom: 5px;
+        color: white;
       }
       &__message {
         font-size: 11px;
+        color: white;
       }
     }
   }
