@@ -39,8 +39,10 @@
   }
 
   .side-groups {
-    padding: 20px 20px 0;
-    height: calc(100vh - 100px);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: calc(100vh - 120px);
 
     .group {
       margin-bottom: 40px;
@@ -134,43 +136,45 @@
       }
     }
   }
-
-
-  .main-foom {
-    height: 90px;
+  .form {
+    // position: fixed;
+    // bottom: 0;
+    // width: 100vh;
     background-color: #d2d2d2;
-    foom {
+    height: 50px;
+    padding: 20px 40px;
+    .new_message {
       display: flex;
-      padding: 20px 40px;
-
-      .input-box{
+      width: 100%;
+      position: relative;
+      
+      .form__message {
+        height: 50px;
         width: 100%;
-        display: flex;
-        position: relative;
+        color: #434a54;
+        padding: 0 40px 0 10px;
+        border-style: none;
+      }
+      .form__mask__image{
+        position: absolute;
+        top: 15px;
+        right: 125px;
 
-        &__text {
-          height: 50px;
-          width: 100%;
-          padding-left: 10px;
+        &__icon {
+          font-size: 1.4rem;
         }
-        &__image {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          font-size: 1.5rem;
-
-          &__file{
-            display: none;
-          }
+        .hidden {
+          display: none;
         }
       }
-
-      .submit-btn{
+      .form__submit {
         width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
         background-color: #38aef0;
         color: white;
-        margin-left: 15px;
-        padding: 0 30px;
+        cursor: pointer;
       }
     }
   }
