@@ -50,7 +50,9 @@
       color: #ffffff;
       font-weight: bold;
       text-decoration: none;
-      
+      a {
+        text-decoration: none;
+      }
       &__name {
         font-size: 15px;
         margin-bottom: 5px;
